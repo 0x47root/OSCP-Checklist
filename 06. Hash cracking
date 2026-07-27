@@ -1,4 +1,4 @@
-# Hack Cracking
+# Hash Cracking
 
 - Identify hash: `hashid offsec.hash`
 - Cracking with john: `john --wordlist=/usr/share/wordlists/rockyou.txt offsec.hash`
