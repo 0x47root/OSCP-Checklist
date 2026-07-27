@@ -1,0 +1,5 @@
+# Hack Cracking
+
+- Identify hash: `hashid offsec.hash`
+- Cracking with john: `john --wordlist=/usr/share/wordlists/rockyou.txt offsec.hash`
+- Searching for specific hash: `hashcat -hh | grep -i 'blowfish'`
