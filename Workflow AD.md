@@ -24,5 +24,12 @@
 - Sprays them against all services using `nxc` > RDP access
 - Local Admin in dual-homed machine?
   - `secretsdump` / `mimikatz`
-  - Hash found? > spray services using `nxc` (`smb|ldap|winrm|rdp|mssql|ssh`)
+  - Hash found? > spray services using `nxc` (smb|ldap|winrm|rdp|mssql|ssh)
 - Access to other machine? > Repeat Enumeration
+
+## Vertical Movement / Post Exploitation
+- Example: DA hash found? > Login to DC
+- Now Post-Exploitation begins
+  - Dump secrets (`secretsdump`, secrets of all the domain, NTDS.dit)
+  - Try to crack hashes with `hashcat`
+  - Golden Ticket / Cleanup (not needed for exam)
